@@ -1,0 +1,108 @@
+fieldset {
+	border: none;
+	margin: 0;
+}
+
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	margin: 0;
+}
+
+.clearfix { *zoom: 1; }
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;	
+}
+.clearfix:after { clear: both; }
+
+/* ---------- LOGIN-FORM ---------- */
+#login-form fieldset {
+	background: #fff;
+	border-radius: 0 0 5px 5px;
+	padding: 21px;
+	position: relative;
+	-webkit-margin-before: 0.67em;
+	-webkit-padding-after: 1.625em;
+}
+
+#login-form2 fieldset {
+	background: #fff;
+	border-radius: 0 0 5px 5px;
+	padding: 21px;
+	position: relative;
+	-webkit-margin-before: 0.67em;
+	-webkit-padding-after: 0.625em;
+}
+
+#fiel_registro {
+	-webkit-margin-before: 2.67em;
+}
+
+@media screen and (max-width: 480px){
+    #login-form fieldset {
+        background: #fff;
+        border-radius: 0 0 5px 5px;
+        padding: 19px;
+        position: relative;
+        width: initial;
+        -webkit-margin-start: auto;
+        -webkit-margin-before: 0.67em;
+  }
+	#login-form {
+		margin: 50px auto;
+		width: 290px;
+	}
+	#login-form input {
+		font-size: 19px;
+	}
+	#h2_registro {
+		-webkit-margin-before: -5.33em;
+	}
+
+	h2{
+		-webkit-margin-before: -1.33em;
+	}
+	table {
+		-webkit-margin-before: 0.9em;
+		-webkit-margin-start: -15px;
+		-webkit-margin-end: -14px;
+	}
+}
+
+#login-form fieldset:before {
+	background-color: #fff;
+}
+
+#login-form input {
+	font-size: 19px;
+}
+
+#login-form input {
+	border: 1px solid #dcdcdc;
+	padding: 12px 10px;
+	width: 231px;
+}
+
+#boton {
+    background: yellow;
+    border-radius: 3px;
+    color: black;
+    font-weight: bold;
+    margin-top: 8px;
+    padding: 10px 30px;
+    width: -webkit-fill-available;
+    cursor: pointer;
+    border-radius: 30px;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+#buton:active{
+    background-color: transparent;
+}
+
+#boton:hover { 
+    background: rgb(204, 198, 196)
+}

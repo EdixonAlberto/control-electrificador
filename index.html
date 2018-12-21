@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/Estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/Sesion.css">
+
+    <title>AccesoSistema</title>
+</head>
+
+<body ontouchstart="">
+    <div id="login-form">
+        <h2>Acceso Sistema</h2>
+        <fieldset>
+            <input type="password" id="Key" placeholder="Ingresar Clave">
+            <input type="button" id="boton" value="Ingresar" onclick="Iniciar()">
+        </fieldset>
+    </div>
+
+    <script>
+        function Iniciar() {
+            var ClaveIngreso = $('#Key').val();
+            $.ajax({
+                async: false,
+                type: "POST",
+                url: "GestionClave.php",
+                data: { Clave: ClaveIngreso, Metodo: "Verificar" },
+                dataType: 'text',
+                success: function (msj) {
+                    if (msj == 'true') {
+                        location.href = "Electrificador.html";
+                        alert("Acceso Permitido");
+                    }
+                    else if (msj == 'false') {
+                        location.href = "index.html";
+                        alert("Clave Incorrecta");
+                    }
+                    else alert(msj);
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

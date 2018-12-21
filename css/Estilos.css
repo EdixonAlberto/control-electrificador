@@ -1,0 +1,59 @@
+html{
+    text-align: center;
+    font-family: "Arial",
+    Arial, Georgia, serif, Times;
+}
+
+h2 {
+    background-color: #282830;
+    color: #fff;
+    padding: 14px;
+    text-transform: uppercase;
+    display: block;
+    font-size: 26px;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: -0.33em;
+    -webkit-margin-start: inherit;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+#h2_registro {
+    font-size: 17px;
+    -webkit-margin-before: -3.33em;
+    -webkit-margin-start: -20px;
+    -webkit-margin-end: -20px;
+}
+
+table {
+    border-collapse: collapse;
+    -webkit-border-before: hidden;
+    -webkit-border-start-style: hidden;
+    -webkit-border-end-style: hidden;
+    text-align-last: center;
+    font-size: 14px;
+    width: -webkit-fill-available;
+}
+
+#Titulo {
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(190, 190, 190);
+}
+tr:nth-child(even) {
+    background-color: white;
+}
+
+td {
+   border: 1px solid rgb(0, 0, 0);
+   border-collapse: collapse;
+   padding: 3px;
+   caption-side: bottom;
+   color: black;
+   width: 320px;
+}

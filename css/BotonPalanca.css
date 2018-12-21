@@ -1,0 +1,68 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  left: 5px;
+  right: -7px;
+  bottom: 0;
+  background-color: #282830;
+  color: #282830;
+  border-radius: 30px;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slider:before {
+  content: "OFF";
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  min-height: fit-content;
+  width: 88px;
+  left: 5px;
+  bottom: 7px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+input:checked + .slider {
+  background-color: green;
+  color: green;
+}
+
+input:checked + .slider:before {
+  content: "ON";
+  transform: translateX(100px);
+}
+
+button {
+  background: yellow;
+  border-radius: 30px;
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px 30px;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 4px;
+  width: 200px;
+  cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:hover { 
+    background: rgb(204, 198, 196);
+}
