@@ -28,7 +28,7 @@
             $.ajax({
                 async: false,
                 type: "POST",
-                url: "GestionClave.php",
+                url: "php/GestionClave.php",
                 data: { Clave: ClaveIngreso, Metodo: "Verificar" },
                 dataType: 'text',
                 success: function (msj) {

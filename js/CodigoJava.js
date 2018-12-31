@@ -13,7 +13,7 @@ function Evento(tabla) {
     $.ajax({
         async: true,
         type: "POST",
-        url: "EventoDB.php",
+        url: "../php/EventoDB.php",
         data: { Fecha: tabla },
         dataType: "html",
         success: function (data) {
@@ -102,7 +102,7 @@ function ValidacionesCampos() {
         $.ajax({
             async: false,
             type: "POST",
-            url: "GestionClave.php",
+            url: "../php/GestionClave.php",
             data: { Clave: clave, Metodo: "Verificar" },
             dataType: 'text',
             success: function (data) {
@@ -118,11 +118,11 @@ function GuardarClave() {
     $.ajax({
         async: false,
         type: "POST",
-        url: "GestionClave.php",
+        url: "../php/GestionClave.php",
         data: { Clave: NuevaClave, Metodo: "Guardar" },
         dataType: 'text',
         success: function (msj) {
-            location.href = "ClaveAcceso.html";
+            location.href = "../ClaveAcceso.html";
             alert(msj);
         }
     });

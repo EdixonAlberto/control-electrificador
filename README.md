@@ -24,8 +24,10 @@ Este proyecto se trata sobre una aplicacion WEB que sirve como control remoto de
 + PHP 7.2 (Utilizando POO)
 + Base de Datos MySQL
 + Programación en Arduino
-+ Lenguaje de comandos AT
++ Manejo del lenguaje de comandos AT
 + Técnicas de control de flujo
+
+#
 
 ### **Hardware:**
 + Fuente conmutada
