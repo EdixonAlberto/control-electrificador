@@ -1,5 +1,5 @@
-# Control para Electrificador de Cercas en Perímetros Residenciales
-
+Control para Electrificador de Cercas en Perímetros Residenciales
+=
 Este proyecto se trata sobre una aplicacion WEB que sirve como control remoto de un electrificador de cercas usado para la seguridad de perimetros en areas residenciales.
 
 ## (Funsiones)
@@ -10,7 +10,7 @@ Este proyecto se trata sobre una aplicacion WEB que sirve como control remoto de
 + Almacenar las anomalias de la cerca en una base de datos
 + Entre otras
 
----
+#
 
 ## (Tecnologías Usadas)
 
