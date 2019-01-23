@@ -32,11 +32,23 @@ bool ConexionWifi() {
 
 	ComandoAT = "CWJAP=" + SSID + "," + CLAVE;
 	AT(ComandoAT);
-	debug(ComandoAT);
 	Esperar("OK");
 
 	return true;
 	Mensaje("Conexion Establecida");
+}
+
+String PaginaConfirmacionConexion() {
+	String str = "";
+	str += "<html>";
+	str += "<head>";
+	str += "<title>ConexionWifi</title>";
+	str += "</head>";
+	str += "<body>";
+	str += "<h1>Conexion Establecida</h1>";
+	str += "</body>";
+	str += "</html>";
+	return str;
 }
 
 void ModoServidor() {
@@ -103,7 +115,7 @@ void Esperar(String Promesa) {
 }
 
 void vaciar() {
-	while (Wifi.available() > 0) { 
+	while (Wifi.available() > 0) {
 		if (_debug) {
 			buffer = Wifi.readString();
 			Serial.println(buffer);

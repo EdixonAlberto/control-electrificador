@@ -89,7 +89,6 @@ void loop()
 	RecibirOrdenes();
 	ConmutadorDePotencia();
 	ProcesarEvento();
-	//DebugWifi();
 }
 #pragma endregion //Programa
 
@@ -99,7 +98,6 @@ void ControlAlimentacion()
 	delay(3000);
 	noInterrupts();
 	_EstadoFuente = digitalRead(PinFuente);
-	debug(_EstadoFuente);
 	if (_EstadoFuente)
 	{
 		_Evento = FuenteON;
