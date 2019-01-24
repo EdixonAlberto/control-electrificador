@@ -1,10 +1,5 @@
 // Electrificador de Cercas para Perimetros Residenciales
-
-/*
-	Name:       Electrificador_ARDUINO_ESP8266.ino
-	Created:	14/7/2018 12:25:17 p.m.
-	Author:     Edixon Pi�a, V-20.670.071, +584263070365
-*/
+// Created:	14/7/2018
 
 #include <eeprom.h>
 #include <SoftwareSerial.h>

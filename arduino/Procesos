@@ -1,3 +1,5 @@
+// Procesos y funcionalidades que debe ejecutar el electrificador cuando se requieran
+
 void ConmutadorDePotencia() {
 	if (_EstadoConmutador) {
 		BuzzerConmutador();
@@ -60,9 +62,9 @@ void Alarma(int Frecuancia1, int Frecuencia2, int tiempoAlarma) {
 void RecibirOrdenes() {
 	if (Wifi.available() > 0) {
 		delay(1000);
-		
+
 		if (Wifi.find("+IPD,")) {
-			
+
 			ConexionID = Wifi.read() - 48;
 
 			int EstadoWifi = 0;
@@ -92,7 +94,7 @@ void RecibirOrdenes() {
 			}
 		}
 		else {
-			Mensaje("Msj Extraño");
+			Mensaje("Msj Extraï¿½o");
 		}
 	}
 }
