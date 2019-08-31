@@ -1,0 +1,23 @@
+{
+  "name": "control-electrificador",
+  "version": "1.0.0",
+  "description": "App web para controlar electrificador de cercas de perimetros residenciales",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --host=localhost --port=5000"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Edixon Alberto",
+    "email": "edixonnalbertto@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jquery": "^3.3.31",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "push.js": "^1.0.12"
+  }
+}
