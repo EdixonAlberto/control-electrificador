@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ClaveAcceso</title>
+    <!-- STYLES CSS -->
+    <link rel="stylesheet" type="text/css" href="css/Estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/Sesion.css">
+</head>
+
+<body>
+    <div id="login-form">
+        <h2>Clave de Acceso</h2>
+        <fieldset>
+            <strong id="error"></strong> <br />
+            <input type="password" id="oldKey" placeholder="Ingresar Clave Actual"> <br />
+            <input type="password" id="newKey" placeholder="Ingresar Nueva Clave" disabled="true"> <br />
+            <input type="password" id="confirmKey" placeholder="Confirmar Nueva Clave" disabled="true"> <br />
+            <input type="button" class="boton" value="Guardar" onclick="keySave()">
+        </fieldset>
+    </div>
+
+    <!-- SCRIPTS JS -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/push.js/bin/push.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            loginKey();
+        })
+    </script>
+</body>
+
+</html>

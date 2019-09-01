@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/CodigoJava.js"></script>
+    <title>ConeccionWifi</title>
+    <!-- STYLES CSS -->
     <link rel="stylesheet" type="text/css" href="css/Estilos.css">
     <link rel="stylesheet" type="text/css" href="css/Sesion.css">
-
-    <title>ConeccionWifi</title>
 </head>
 
 <body>
@@ -20,9 +17,13 @@
         <fieldset>
             <input type="text" id="NombreSSID" placeholder="Ingresar Nombre WiFi">
             <input type="password" id="ClaveWifi" placeholder="Ingresar Clave WiFi">
-            <input type="button" id="boton" value="Conectar" onclick="SetupWifi()">
+            <input type="button" class="boton" value="Conectar" onclick="setupWifi()">
         </fieldset>
     </div>
+
+    <!-- SCRIPTS JS -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

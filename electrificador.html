@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Electrificador</title>
+    <!-- STYLES CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/Estilos.css">
+    <link rel="stylesheet" type="text/css" href="./css/Sesion.css">
+    <link rel="stylesheet" type="text/css" href="./css/BotonPalanca.css">
+</head>
+
+<body>
+    <div id="login-form">
+        <h2>ELECTRIFICADOR</h2>
+        <fieldset>
+            <label class="switch">
+                <input type="checkbox" id="Boton" onclick="sendArduino()">
+                <span class="slider"></span>
+            </label>
+
+            <hr>
+            <input type="button" class="boton" value="Clave de Acceso" onclick="location.href='login-key.html'">
+            <input type="button" class="boton" value="Conección WiFi" onclick="location.href='connection-wifi.html'">
+            <input type="button" class="boton" value="Salir del Sistema" onclick="location.href='index.html'">
+            <input type="button" id="stop" class="boton" value="Iniciar Registro" onclick="stop()">
+            <hr>
+        </fieldset>
+    </div>
+
+    <div id="login-form2">
+        <fieldset id="fiel_registro">
+            <h2 id="h2_registro">Registro de Actividad</h2>
+            <p id="register"></p>
+        </fieldset>
+    </div>
+
+    <!-- SCRIPTS JS -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/push.js/bin/push.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            eventElectrificador();
+        })
+    </script>
+</body>
+
+</html>
