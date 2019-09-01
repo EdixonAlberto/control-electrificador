@@ -1,0 +1,15 @@
+CREATE DATABASE control_electrificador;
+
+CREATE TABLE users (
+	id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	key VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE register (
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    event VARCHAR(50) NOT NULL,
+    date TIMESTAMP NOT NULL
+);
+
+SELECT "key"
+FROM control_electrificador.users;
